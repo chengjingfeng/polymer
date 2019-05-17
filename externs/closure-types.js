@@ -16,7 +16,7 @@
 * @interface
 */
 function Polymer_PropertiesChanged(){}
-/** @protected {boolean} */
+/** @type {boolean} */
 Polymer_PropertiesChanged.prototype.__dataEnabled;
 
 /**
@@ -981,11 +981,11 @@ Polymer_LegacyElementMixin.prototype.__boundListeners;
 /** @type {?Object.<string, ?Function>} */
 Polymer_LegacyElementMixin.prototype._debouncers;
 
-/** @type {undefined} */
-Polymer_LegacyElementMixin.prototype.domHost;
-
 /** @type {string} */
 Polymer_LegacyElementMixin.prototype.is;
+
+/** @type {undefined} */
+Polymer_LegacyElementMixin.prototype.domHost;
 
 /**
 * @override
@@ -1414,10 +1414,12 @@ Polymer_StrictBindingParser._parseBindings = function(text, templateInfo){};
 function Polymer_DisableUpgradeMixin(){}
 /**
 * @override
+* @return {void}
 */
 Polymer_DisableUpgradeMixin.prototype._initializeProperties = function(){};
 /**
 * @override
+* @return {void}
 */
 Polymer_DisableUpgradeMixin.prototype._enableProperties = function(){};
 /**
